@@ -8,10 +8,10 @@ try:
     letter = 0
     digit = 0
 
-    for char in name_line:
-        if (char >= 'a' and char <= 'z') or (char >= 'A' and char <= 'Z'):
+    for symbol in name_line:
+        if (symbol >= 'a' and symbol <= 'z') or (symbol >= 'A' and symbol <= 'Z'):
             letter += 1
-        if char >= '0' and char <= '9':
+        if symbol >= '0' and symbol <= '9':
             digit += 1
 
     print(f"Quantity of letter: {letter}")
@@ -21,3 +21,26 @@ except Exception as e:
     print(f"Incorrect action{e}")
 finally:
     print("End program\n")
+
+# task 2
+
+try:
+
+    name_string = input("Enter text: ")
+    name_symbol = input("Enter symbol: ")
+
+    i = 0
+
+    for letter in name_string:
+            if letter == name_symbol:
+                i += 1
+
+
+
+    print(f"Requested symbol: {name_symbol}\nQuantity of letter: {i}")
+
+except Exception as e:
+    print(f"Incorrect action{e}")
+finally:
+    print("End program\n")
+
