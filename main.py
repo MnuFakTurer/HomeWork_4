@@ -44,3 +44,20 @@ except Exception as e:
 finally:
     print("End program\n")
 
+
+# task 3
+
+try:
+
+    name_text = input("Enter text: ")
+    text_search = input("Enter text search: ")
+    text_replace = input("Enter text replace: ")
+
+    result_text = name_text.replace(text_search, text_replace)
+
+    print(f"Result: {result_text}")
+
+except Exception as e:
+    print(f"Incorrect action{e}")
+finally:
+    print("End program\n")
