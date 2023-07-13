@@ -61,3 +61,26 @@ except Exception as e:
     print(f"Incorrect action{e}")
 finally:
     print("End program\n")
+
+
+# task 4
+
+
+try:
+
+    slice_text = input("Enter text: ")
+
+    print(slice_text[2])
+    print(slice_text[-2])
+    print(slice_text[:5])
+    print(slice_text[:-2])
+    print(slice_text[::2])
+    print(slice_text[1::2])
+    print(slice_text[::-1])
+    print(slice_text[::-2])
+    print(len(slice_text))
+
+except Exception as e:
+    print(f"Incorrect action{e}")
+finally:
+    print("End program\n")
